@@ -1,0 +1,17 @@
+:root {
+  // text color custom proprties for dark theme START
+  --clr-dark-high: #{$ch-dark-high};
+  --clr-dark-medium: #{$ch-dark-medium};
+  --clr-dark-disable: #{$ch-dark-disable};
+  --clr-dark-bg: #{$ch-dark-bg};
+  // text color custom proprties for dark theme END
+
+  // custom tag colors start 
+  --clr-tag-draft: #b8b8b8;
+  --clr-tag-sent: #4A516D;
+  --clr-tag-viewed: #fc9258;
+  --clr-tag-follow: #{$primary};
+  --clr-tag-consented: #4dd1c4;
+
+  // custom tag colors end 
+}

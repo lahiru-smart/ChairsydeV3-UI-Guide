@@ -1,0 +1,82 @@
+@import 'devices.scss';
+// breakpoints
+$breakpoints: (
+  mobile: 318px,
+  x-small: 375px,
+  small: 480px,
+  md-small: 576px,
+  lg-small: 650px,
+  tablet: 768px,
+  medium: 991px,
+  desktop: 1023px,
+  ipad: 1024px,
+  widescreen: 1215px,
+  laptop-sm: 1300px,
+  laptop: 1400px,
+  fullhd: 1407px,
+);
+
+@mixin mq($key) {
+  $size: map-get($breakpoints, $key);
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minq($key) {
+  $size: map-get($breakpoints, $key);
+  @media only screen and (min-width: $size + 1px) {
+    @content;
+  }
+}
+
+.columns.is-widescreen {
+  @include mq(widescreen) {
+    display: block !important;
+  }
+}
+.columns.is-fullhd {
+  @include mq(fullhd) {
+    display: block !important;
+  }
+}
+
+.columns.is-laptop {
+  @include mq(laptop-sm) {
+    display: block !important;
+  }
+}
+
+// -----custom breakpoints----------
+
+/* 
+@include mq(desktop) {
+}
+
+@include minq(desktop) {
+}
+
+@media #{$break-ds-lp} {
+
+}
+*/
+
+// ---bulma breakpoints---------------
+/*
+mobile: up to 768px
+tablet: from 769px
+desktop: from 1024px
+widescreen: from 1216px
+fullhd: from 1408px
+*/
+
+/*
+
+@include tablet {
+  
+}
+
+@include mobile {
+  
+}
+*/

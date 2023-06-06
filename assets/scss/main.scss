@@ -1,0 +1,207 @@
+@import "@/assets/fonts/basier/font.css";
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+@import "light.scss";
+@import "front.scss";
+// @import 'style-light.scss';
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+.dark-mode {
+  @import "dark.scss";
+  @import "style-dark.scss";
+
+  @import "~bulma";
+  @import "~buefy/src/scss/buefy";
+}
+
+*:not(.fas, .far, .fab) {
+  font-family: "Basier Circle", sans-serif !important;
+}
+
+.plyr {
+  .middleButtons {
+    color: #fff;
+    left: 50%;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      background-color: transparent;
+    }
+
+    button {
+      color: #fff;
+      position: unset;
+      transform: unset;
+    }
+
+    .plyr__control {
+      border-radius: 100%;
+      padding: 6px;
+      width: 80px;
+      height: 80px;
+      position: relative;
+
+      &.plyr__tab-focus {
+        box-shadow: unset;
+      }
+
+      i {
+        top: 0px;
+        left: 14px;
+        position: absolute;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.507);
+      }
+    }
+  }
+}
+
+.prv-control:not(.havePrv *) {
+  display: none;
+}
+
+.next-control:not(.haveNext *) {
+  display: none;
+}
+
+.plyr--full-ui input[type="range"] {
+  color: #fa5f6b;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.notLoader {
+  -webkit-animation: none !important;
+  animation: none !important;
+  border: 0px !important;
+}
+
+.outFrame {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+}
+
+.expand-height-enter-active,
+.expand-height-leave-active {
+  transition: height 0.3s;
+  overflow: hidden;
+}
+
+.expand-height-enter,
+.expand-height-leave-to {
+  height: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.fade-long-enter-active,
+.fade-long-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-long-enter, .fade-long-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.drag-class {
+  border: 2px solid $primary !important;
+}
+
+.video-content .b-skeleton {
+  position: absolute;
+  background: white;
+}
+
+.notices {
+  z-index: 9999999 !important;
+}
+
+.b-skeleton-item:after {
+  content: " " !important;
+}
+
+.customInput {
+  border: 0;
+  background: transparent;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+    // border: 3px solid rgba(255, 255, 255, 0.664);
+    box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.664) !important;
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba(221, 209, 209, 0.685);
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(221, 209, 209, 0.685);
+  }
+
+  &::placeholder {
+    color: rgba(221, 209, 209, 0.685);
+  }
+}
+
+.light-theme {
+  .customInput {
+    &:focus {
+      outline: none;
+      // border: 3px solid rgba(255, 255, 255, 0.664);
+      box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.664) !important;
+    }
+    &::-webkit-input-placeholder {
+      color: rgba(134, 130, 130, 0.685);
+    }
+
+    &:-ms-input-placeholder {
+      color: rgba(134, 130, 130, 0.685);
+    }
+
+    &::placeholder {
+      color: rgba(134, 130, 130, 0.685);
+    }
+  }
+}
+
+.mt-5-5 {
+  margin-top: 2rem !important;
+}
+
+:root {
+  --deivce-type:desktop;
+  @media screen and (max-width: 768px) {
+    --deivce-type:mobile;
+  }
+}

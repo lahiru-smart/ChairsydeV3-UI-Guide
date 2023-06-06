@@ -1,0 +1,471 @@
+@import 'devices.scss';
+@import 'breakpoints.scss';
+
+/* borders */
+
+// custom utilities
+@each $prop, $value in $colors {
+  .bd-#{$prop} {
+    border: 1px solid nth($value, 1) !important;
+  }
+
+  .is-dashed.bd-#{$prop} {
+    border: 1px dashed nth($value, 1) !important;
+  }
+}
+
+/*-------font sizes-----------------*/
+$fontSizes: (
+  'xxsml': 0.5rem,
+  'xsml': 0.625rem,
+  'sml': 0.75rem,
+  'nl': 0.875rem,
+  'mmd': 1rem,
+  'nmd': 1.25rem,
+  'smd': 1.5rem,
+  'md': 1.75rem,
+);
+
+@each $fontprop, $fontvalue in $fontSizes {
+  .fs-#{$fontprop} {
+    font-size: $fontvalue !important;
+  }
+}
+
+/*-------font sizes-----------------*/
+
+/*-------custom tag colors-----------------*/
+$tagColors: (
+  'draft': var(--clr-tag-draft),
+  'sent': var(--clr-tag-sent),
+  'viewed': var(--clr-tag-viewed),
+  'follow': var(--clr-tag-follow),
+  'consented': var(--clr-tag-consented),
+);
+
+@each $tagprop, $tagvalue in $tagColors {
+  .#{$tagprop}-tag {
+    border-color: $tagvalue !important;
+    color: $tagvalue !important;
+
+    span,
+    i {
+      color: $tagvalue !important;
+    }
+  }
+}
+/*-------custom tag colors-----------------*/
+
+/*-------border radius sizes-----------------*/
+$bdrSizes: (
+  4: 4px,
+  8: 8px,
+  10: 10px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  25: 25px,
+  30: 30px,
+  100: 100vmax,
+);
+
+@each $bdrprop, $bdrvalue in $bdrSizes {
+  .br-#{$bdrprop} {
+    border-radius: $bdrvalue !important;
+  }
+}
+
+/*-------border radius sizes-----------------*/
+
+/*-------opacity sizes-----------------*/
+$opSizes: (
+  0: 0,
+  1: 1,
+);
+
+@each $opprop, $opvalue in $opSizes {
+  .opacity-#{$opprop} {
+    opacity: $opvalue !important;
+  }
+}
+
+/*-------opacity sizes-----------------*/
+
+/*-------window height sizes-----------------*/
+$windowSizes: (
+  40: 40vh,
+  50: 50vh,
+  60: 60vh,
+  70: 70vh,
+  80: 80vh,
+  90: 90vh,
+  100: 100vh,
+);
+
+@each $windowprop, $windowvalue in $windowSizes {
+  @for $i from 1 through 300 {
+    .win-h-#{$windowprop}-#{$i} {
+      height: calc(#{$windowvalue} - #{$i}px);
+
+      @include mobile {
+      }
+    }
+  }
+}
+
+/*-------window height sizes-----------------*/
+
+/*-------boxes width/height sizes-----------------*/
+@for $j from 1 through 1000 {
+  .w-#{$j}px {
+    width: #{$j}px;
+  }
+
+  .h-#{$j}px {
+    height: #{$j}px;
+  }
+
+  .max-w-#{$j}px {
+    max-width: #{$j}px;
+  }
+
+  .min-h-#{$j}px {
+    min-height: #{$j}px;
+  }
+
+  .min-w-#{$j}px {
+    min-width: #{$j}px;
+  }
+
+  .min-h-#{$j}px {
+    min-height: #{$j}px;
+  }
+}
+
+/*-------boxes width/height sizes-----------------*/
+
+/*-------lineheight sizes-----------------*/
+$lineHeightSizes: (
+  1: 1,
+  2: 2,
+);
+
+@each $lineHeightprop, $lineHeightvalue in $lineHeightSizes {
+  .line-height-#{$lineHeightprop} {
+    line-height: $lineHeightvalue !important;
+  }
+}
+
+/*-------lineheight sizes-----------------*/
+
+/*-------equal sizes-----------------*/
+$eqSizes: (
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+  40: 40px,
+  50: 50px,
+  80: 80px,
+  128: 128px,
+);
+
+@each $eqprop, $eqvalue in $eqSizes {
+  .is-#{$eqprop}x#{$eqprop} {
+    width: $eqvalue !important;
+    height: $eqvalue !important;
+  }
+}
+
+/*-------equal sizes-----------------*/
+
+/*-------spacing for RD-----------------*/
+$spacing: (
+  'auto': auto,
+  0: 0rem,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.5rem,
+  6: 3rem,
+  10: 10rem,
+  10px: 10px,
+);
+/*-------spacing for RD-----------------*/
+
+/*-------columns for RD-----------------*/
+$col: (
+  1: 8.33333%,
+  2: 16.66667%,
+  3: 25%,
+  4: 33.33333%,
+  5: 41.66667%,
+  6: 50%,
+  7: 58.33333%,
+  8: 66.66667%,
+  9: 75%,
+  10: 83.33333%,
+  11: 91.66667%,
+  12: 100%,
+);
+/*-------columns for RD-----------------*/
+
+/*-------Order for RD Flexbox-----------------*/
+$order: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+);
+/*-------Order for RD Flexbox-----------------*/
+
+/* font awesome */
+@mixin fa {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  // content: "\f0d8";
+}
+
+/* breakout */
+@mixin breakout {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+@mixin boxHover {
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 16px 4px rgba(75, 101, 126, 0.09);
+    border: 1px solid $ch-txt-sub;
+    z-index: 9;
+  }
+}
+
+/* grid layout */
+@mixin mobileGridTouch {
+  @include touch {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq(md-small) {
+    grid-template-columns: 1fr;
+  }
+}
+@mixin mobileGridMobile {
+  @include mobile {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq(md-small) {
+    grid-template-columns: 1fr;
+  }
+}
+/* grid layout */
+
+/* button color change */
+@mixin btnColorblack {
+  &:hover {
+    color: $ch-vid !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Scroll */
+@mixin innerScroll {
+  scrollbar-color: #a3afbc transparent;
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a3afbc;
+  }
+}
+
+@mixin innerScrollPrimary {
+  scrollbar-color: $primary transparent;
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary;
+  }
+}
+
+@mixin innerScrollX {
+  scrollbar-color: #a3afbc transparent;
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a3afbc;
+  }
+}
+
+/* Status bar animation */
+$deg: 90deg;
+$clr-1: #fa5f6b;
+$clr-2: #5c2022;
+$clr-3: #ff7852;
+
+@mixin loadBar() {
+  content: '';
+  position: absolute;
+  inset: 0;
+  animation: animate 35s linear infinite;
+  background-size: 500%;
+}
+
+@mixin statusBar-gradient($deg, $clr-1, $clr-2, $clr-3) {
+  &::before {
+    background: linear-gradient(
+      $deg,
+      $clr-1,
+      $clr-2,
+      $clr-3,
+      $clr-2,
+      $clr-3,
+      $clr-1
+    );
+    @include loadBar();
+  }
+
+  &::after {
+    background: linear-gradient(
+      $deg,
+      $clr-1,
+      $clr-2,
+      $clr-3,
+      $clr-2,
+      $clr-3,
+      $clr-1
+    );
+    @include loadBar();
+    filter: blur(10px);
+  }
+}
+
+/* Status bar animation */
+
+/* Clip Text */
+@mixin clipText() {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: min(50ch, 70%);
+}
+
+@mixin clipTextnl() {
+  overflow: hidden;
+  max-width: 15ch;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@mixin shadowActive() {
+  &:focus,
+  &:active {
+    box-shadow: 0px 2px 16px 4px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+/* Clip Text */
+
+/* normal tooltip dropdown */
+@mixin tooltipDropdown() {
+  .tooltip-content {
+    overflow: inherit;
+    border-radius: 8px;
+    left: auto !important;
+    inset: 2.3rem -2rem auto auto;
+    min-width: fit-content;
+    background: $ch-vid !important;
+    border: 2px solid $ch-txt-sub !important;
+
+    &::before {
+      left: 50% !important;
+      border-width: 8px !important;
+      border-bottom-color: $ch-txt-sub !important;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+/* normal tooltip dropdown */
+
+/* box bottom gradient */
+@mixin boxBottomGradient() {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    width: 100%;
+    height: 5em;
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      $ch-dark-black 100%
+    );
+  }
+  &__light {
+    &::after {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #f3f3f3 100%);
+    }
+  }
+}
+
+/* box bottom gradient */
+
+/* y axis scroll */
+@mixin yScroll() {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* y axis scroll */

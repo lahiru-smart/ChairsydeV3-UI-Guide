@@ -1,0 +1,409 @@
+// theme config
+$dark-color: #2b3c4d;
+$ch-icons-invert: #516375;
+
+// $navbar-item-color: $dark-color;
+// $navbar-item-hover-background-color: #2e2e2e;
+// $navbar-dropdown-item-color: $black;
+// $link: scale-color($dark-color, $lightness: -20%);
+// $link-hover: scale-color($dark-color, $lightness: -40%);
+// $body-color: $dark-color;
+// $text: $dark-color;
+// $button-text-color: $dark-color;
+
+.light-logo {
+  display: none;
+}
+
+.dark-logo {
+  display: block;
+}
+
+.light-theme {
+  &:not(.dark-convert) {
+
+  [type="search"]::-webkit-search-cancel-button {
+    filter: invert(0);
+  }
+
+  .light-logo {
+    display: block;
+  }
+
+  .dark-logo {
+    display: none;
+  }
+
+  .b-skeleton > .b-skeleton-item {
+    background: linear-gradient(
+        90deg,
+        #dbdbdb 25%,
+        hsla(0, 0%, 86%, 0.5) 50%,
+        #dbdbdb 75%
+    ) !important;
+  }
+  
+  .b-skeleton>.b-skeleton-item {
+    background: linear-gradient(90deg,
+        #dbdbdb 25%,
+        hsla(0, 0%, 86%, 0.5) 50%,
+        #dbdbdb 75%) !important;
+  }
+
+  color: $dark-color;
+
+  .has-text-ch-icons {
+    color: $ch-icons-invert !important;
+  }
+
+  .has-text-ch-dark-grey {
+    color: $dark-color !important;
+  }
+
+  .navbar:not(.sidebar-nav) {
+
+    a.navbar-item,
+    .navbar-link {
+      color: $ch-icons;
+
+      &:hover {
+        // background-color: $ch-border;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .icon {
+    i {
+      color: $ch-icons;
+    }
+
+    &.is-primary {
+      i {
+        color: $primary;
+      }
+    }
+  }
+
+  .nuxt-link-active {
+    .icon {
+      &.active-icon {
+        i {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .top-nav {
+    .icon {
+      i {
+        color: $dark-color;
+      }
+
+      i.mdi-stop,
+      i.mdi-chevron-right {
+        color: $primary;
+      }
+
+      i.mdi-play {
+        transform: translateY(-5%);
+      }
+    }
+  }
+
+  /*----------------Reset Styles for Light Theme Start--------------------*/
+
+  .button.is-icon-clr-same {
+    i {
+      color: inherit !important;
+    }
+  }
+
+  .top-nav {
+    @include mobile {
+      background: $black !important;
+
+      .menu-icon i,
+      .search-mobile i {
+        color: $ch-icons !important;
+      }
+    }
+
+    .whiteTxt-dark {
+      color: $primary !important;
+    }
+  }
+
+  .nav-search {
+    input::placeholder {
+      color: $ch-grey;
+      font-size: 14px;
+    }
+
+    input {
+      background-color: $white !important;
+      border: 1px solid $ch-border !important;
+      border-radius: 8px !important;
+      color: $ch-maroon !important;
+    }
+
+    .check-btn {
+      background: $success !important;
+    }
+
+    .icon {
+      i {
+        color: $white;
+      }
+    }
+  }
+
+  .searchInput {
+    input::placeholder {
+      color: $ch-grey;
+      font-size: 14px;
+    }
+
+    input {
+      background-color: $white !important;
+      border: 1px solid $ch-border !important;
+      border-radius: 8px !important;
+      color: $ch-maroon !important;
+    }
+
+    .icon {
+      i {
+        color: $ch-border;
+
+        &::before {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__top-nav {
+      input {
+        border: 0px solid $ch-border !important;
+      }
+
+      i {
+        color: $ch-grey;
+      }
+    }
+  }
+
+  .edu-wrap {
+    .content-wrap {
+      .box {
+        background: rgba(255, 255, 255, 0.66);
+        box-shadow: 0px 0px 23.8703px rgba(137, 156, 197, 0.0758577);
+      }
+    }
+  }
+
+
+
+  .dte-picker {
+    .datepicker {
+      .dropdown-content {
+        .dropdown-item {
+          .datepicker-header {
+            .pagination {
+              .select {
+                &::after {
+                  border-color: $dark-color;
+                }
+              }
+
+              select {
+                color: $dark-color;
+                font-weight: 600;
+              }
+
+              i {
+                color: $dark-color;
+              }
+            }
+
+            .datepicker-cell {
+              color: $ch-icons-invert;
+            }
+
+            .button.is-small {
+              border-radius: 20px !important;
+              border-color: $primary !important;
+              padding-left: 1.5em;
+              padding-right: 1.5em;
+            }
+          }
+
+          .datepicker-body {
+            .datepicker-cell {
+              color: $ch-icons-invert;
+              font-size: inherit;
+              padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+              border: none;
+
+              &.is-selectable {
+                span {
+                  &::before {
+                    content: none;
+                    background-color: $primary;
+                  }
+                }
+
+                &.is-today {
+                  // color: #fff;
+
+                  span {
+                    &::before {
+                      content: none;
+                      background-color: $primary;
+                    }
+                  }
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                  color: inherit;
+                }
+
+                &.is-selected {
+                  .events {
+                    display: none;
+                  }
+
+                  span {
+                    color: #fff;
+
+                    &::before {
+                      content: '';
+                      background-color: $primary;
+                      width: 32px;
+                      height: 32px;
+                    }
+                  }
+                }
+              }
+
+              &.is-selected.is-unselectable {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+
+                span {
+                  color: #fff;
+
+                  &::before {
+                    content: '';
+                    background-color: $primary;
+                    width: 32px;
+                    height: 32px;
+                  }
+                }
+              }
+            }
+          }
+
+          .datepicker-content {
+            .datepicker-table {
+              border-spacing: 0px;
+
+              @include minq(medium) {
+                border-spacing: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ti-bx-wrap {
+    .time-box {
+      p {
+        font-weight: 600;
+      }
+    }
+
+    .ti-bx {
+      h6 {
+        color: $dark-color;
+      }
+
+      span {
+        font-weight: 400;
+      }
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+
+      &.is-active {
+        background-color: #f8f8f8;
+      }
+    }
+  }
+
+  .pt-tabs {
+    .tabs {
+      a {
+        color: $ch-icons-invert;
+
+        &:hover {
+          color: $ch-icons-invert;
+        }
+      }
+
+      li.is-active {
+        a {
+          color: $ch-icons-invert;
+        }
+      }
+    }
+  }
+
+  .pt-form {
+    .label {
+      color: $dark-color;
+    }
+
+    input::placeholder {
+      color: $ch-light-grey;
+    }
+
+    input {
+      background-color: $white;
+      border-color: $ch-border;
+    }
+  }
+
+  .loading-background {
+    background: #ffffff80 !important;
+    // backdrop-filter: blur(5px);
+  }
+
+  .header-text {
+    color: rgb(0, 0, 0) !important;
+  }
+
+  .get-started-btn {
+    inset: auto 6em 6em auto;
+
+    @include mobile {
+      inset: auto 1em 8em auto;
+    }
+  }
+
+  .mb-header {
+    @include mobile {
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+  }
+
+  /*----------------Reset Styles for Light Theme End--------------------*/
+}
+}

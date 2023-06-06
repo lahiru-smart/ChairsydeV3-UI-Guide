@@ -1,0 +1,285 @@
+$primary: #fa5f6b;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+// $primary-invert: findColorInvert($primary);
+$navbar-item-hover-color: $primary;
+$navbar-dropdown-offset: 5px;
+
+// derived variables
+$ch-black: #0b121c;
+$ch-success: #31a9ad;
+
+// chairsyde colors start
+$black: $ch-black;
+$success: $ch-success;
+
+$ch-gradient: linear-gradient(125.96deg, #fa926b 17.28%, #fa5f6b 84.78%);
+$ch-navy: linear-gradient(0deg, #2f3346, #2f3346);
+
+$ch-icons: #c3c9d0;
+$ch-icons-invert: #516375;
+
+$ch-dark: #22282f;
+$ch-dark-invert: #fff;
+
+$ch-head: #c0c9cd;
+$ch-head-invert: #64686e;
+
+$ch-txt: #2b3c4d;
+$ch-txt-invert: #fff;
+
+$ch-txt-sub: #516375;
+$ch-txt-sub-invert: #fff;
+
+$ch-bg: #f2f4fa;
+$ch-bg-invert: #000;
+
+$ch-border: #d5dde5;
+$ch-border-invert: #000;
+
+$ch-form: #2f353b;
+$ch-form-invert: #fff;
+
+$ch-grey: #a3afbc;
+$ch-grey-invert: #fff;
+
+$ch-dark-grey: #85888d;
+$ch-dark-grey-invert: #fff;
+
+$ch-light-grey: #959fab;
+$ch-light-grey-invert: #fff;
+
+$ch-maroon: #2f3346;
+$ch-maroon-invert: #7e8995;
+
+$ch-pop: #20262d;
+$ch-pop-invert: #fff;
+
+$ch-vid: #191f2a;
+$ch-vid-invert: #fff;
+
+$ch-thumb: #101924;
+$ch-thumb-invert: #fff;
+
+$ch-mid-dark: #262f3e;
+$ch-mid-dark-invert: #fff;
+
+$ch-dark-black: #050505;
+$ch-dark-black-invert: #fff;
+// chairsyde colors end
+
+// text for colors dark theme START
+$ch-dark-high: #e2e2e2;
+$ch-dark-high-invert: #050505;
+
+$ch-dark-medium: #a5a5a5;
+$ch-dark-medium-invert: #101924;
+
+$ch-dark-disable: #747474;
+$ch-dark-disable-invert: #f2f4fa;
+
+$ch-dark-bg: #181b25;
+$ch-dark-bg-invert: #e2e2e2;
+// text for colors dark theme END
+
+// secondary colors START
+$ch-warning: #fc9258;
+$ch-warning-invert: $warning;
+// secondary colors END
+
+// additional variables
+$radius-rounded: 50% !default;
+
+$primary-invert: $ch-vid;
+$success-invert: $ch-vid;
+
+$colors: mergeColorMaps(
+  (
+    'white': (
+      $white,
+      $black,
+    ),
+    'black': (
+      $black,
+      $white,
+    ),
+    'light': (
+      $light,
+      $light-invert,
+    ),
+    'dark': (
+      $dark,
+      $dark-invert,
+    ),
+    'primary': (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark,
+    ),
+    'link': (
+      $link,
+      $link-invert,
+      $link-light,
+      $link-dark,
+    ),
+    'info': (
+      $info,
+      $info-invert,
+      $info-light,
+      $info-dark,
+    ),
+    'success': (
+      $success,
+      $success-invert,
+      $success-light,
+      $success-dark,
+    ),
+    'warning': (
+      $warning,
+      $warning-invert,
+      $warning-light,
+      $warning-dark,
+    ),
+    'danger': (
+      $danger,
+      $danger-invert,
+      $danger-light,
+      $danger-dark,
+    ),
+  ),
+  $custom-colors
+);
+
+// add chairsyde colors
+$addColors: (
+  'ch-icons': (
+    $ch-icons,
+    $ch-icons-invert,
+  ),
+  'ch-txt': (
+    $ch-txt,
+    $ch-txt-invert,
+  ),
+  'ch-txt-sub': (
+    $ch-txt-sub,
+    $ch-txt-sub-invert,
+  ),
+  'ch-bg': (
+    $ch-bg,
+    $ch-bg-invert,
+  ),
+  'ch-form': (
+    $ch-form,
+    $ch-form-invert,
+  ),
+  'ch-head': (
+    $ch-head,
+    $ch-head-invert,
+  ),
+  'ch-dark': (
+    $ch-dark,
+    $ch-dark-invert,
+  ),
+  'ch-grey': (
+    $ch-grey,
+    $ch-grey-invert,
+  ),
+  'ch-border': (
+    $ch-border,
+    $ch-border-invert,
+  ),
+  'ch-dark-grey': (
+    $ch-dark-grey,
+    $ch-dark-grey-invert,
+  ),
+  'ch-light-grey': (
+    $ch-light-grey,
+    $ch-light-grey-invert,
+  ),
+  'ch-maroon': (
+    $ch-maroon,
+    $ch-maroon-invert,
+  ),
+  'ch-pop': (
+    $ch-pop,
+    $ch-pop-invert,
+  ),
+  'ch-vid': (
+    $ch-vid,
+    $ch-vid-invert,
+  ),
+  'ch-thumb': (
+    $ch-thumb,
+    $ch-thumb-invert,
+  ),
+  'ch-mid-dark': (
+    $ch-mid-dark,
+    $ch-mid-dark-invert,
+  ),
+  'ch-dark-black': (
+    $ch-dark-black,
+    $ch-dark-black-invert,
+  ),
+  'ch-dark-high': (
+    $ch-dark-high,
+    $ch-dark-high-invert,
+  ),
+  'ch-dark-medium': (
+    $ch-dark-medium,
+    $ch-dark-medium-invert,
+  ),
+  'ch-dark-disable': (
+    $ch-dark-disable,
+    $ch-dark-disable-invert,
+  ),
+  'ch-dark-bg': (
+    $ch-dark-bg,
+    $ch-dark-bg-invert,
+  ),
+  'ch-warning': (
+    $ch-warning,
+    $ch-warning-invert,
+  ),
+);
+$colors: map-merge($colors, $addColors);
+
+$skeleton-background: linear-gradient(
+  90deg,
+  #222835 25%,
+  rgba(#222835, 0.5) 50%,
+  #222835 75%
+);
+
+.black {
+  filter: brightness(0);
+}
+
+.modal-background {
+  backdrop-filter: blur(3px);
+}
+
+.button {
+  border-radius: 8px !important;
+}
+
+html {
+  overflow: auto !important;
+  background-color: #f2f4fa !important;
+  font-family: 'Basier Circle', sans-serif !important;
+}
+
+.pop-close {
+  top: 20px;
+  right: 20px;
+
+  .delete {
+    &::before,
+    &::after {
+      background-color: $ch-icons !important ;
+    }
+  }
+}
+
+@import 'root.scss';
+@import 'utilities.scss';

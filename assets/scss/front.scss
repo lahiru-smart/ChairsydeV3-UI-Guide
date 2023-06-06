@@ -1,0 +1,843 @@
+// @import 'breakpoints.scss';
+
+.line {
+  width: 6em;
+}
+
+.linehr {
+  width: 15em;
+}
+
+.txt-hr {
+  width: 90%;
+}
+
+.form-wrap {
+  &__signup {
+  }
+}
+
+.light-theme {
+  .bg-circle {
+    background: radial-gradient(
+      farthest-side at top left,
+      rgba(250, 95, 107, 0.35),
+      transparent
+    );
+  }
+  .box {
+    &__front {
+      background-color: rgba(255, 255, 255, 0.6) !important;
+      box-shadow: 0px 0px 23.8703px rgba(137, 156, 197, 0.07) !important;
+    }
+  }
+
+  // payment plan table component start
+  .table-plan {
+    .table {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0rem 0rem 0rem 0rem;
+      max-width: 100%;
+      position: relative;
+      isolation: isolate;
+      z-index: 1;
+      background-color: transparent !important;
+      // overflow: hidden;
+
+      @include mobile {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        isolation: isolate;
+      }
+
+      &::before {
+        @include tablet {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 1);
+          border-radius: 12px;
+          z-index: -1;
+          top: 2.2em;
+        }
+      }
+
+      @include mq(desktop) {
+        max-width: 100%;
+      }
+      .b-tooltip {
+        .tooltip-content {
+          width: min(250px, 150px) !important;
+          word-wrap: break-word;
+        }
+      }
+    }
+
+    .table-row {
+      display: contents;
+    }
+
+    .table-cell {
+      flex-grow: 1;
+      width: 100%;
+      padding: 0.5em;
+      // overflow: hidden;
+      list-style-type: none;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-weight: 300;
+      position: relative;
+
+      &.thead {
+        h5 {
+          line-height: 1;
+          margin-bottom: 8px;
+        }
+      }
+
+      &.cell-top {
+        background: transparent;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      &.cell-feature {
+        text-align: left;
+        font-size: 0.875rem;
+        align-self: flex-end;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: .3rem;
+
+        @include mobile {
+          padding: 1em 0.5em;
+          font-weight: 600;
+          justify-content: center;
+        }
+
+        span {
+          line-height: 1;
+          color: $ch-head;
+          font-size: 1rem;
+          padding-block-start: 3px;
+        }
+      }
+
+      &.btn-cell {
+        border-bottom: 2px solid transparent;
+      }
+
+      &.active_plan {
+        border-left: 2px solid $primary;
+        border-right: 2px solid $primary;
+
+        @include mobile {
+          &:not(.active__header) {
+            border-left: 0px solid transparent;
+            border-right: 1px solid #ddd;
+          }
+        }
+
+        &__header {
+          border-top: 2px solid $primary;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+
+          // padding: 0 0 0.5em 0;
+          @include mobile {
+            border-bottom: 2px solid $primary;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+          }
+        }
+        &__footer {
+          border-bottom: 2px solid $primary;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          @include mobile {
+            border-bottom: 0;
+            border-radius: 0;
+          }
+        }
+      }
+      &.deactivate_plan {
+        opacity: 0.6;
+        &__header {
+          align-self: flex-end;
+        }
+        &__footer {
+          @include mobile {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    /* =========Table columns ================= */
+    .table-cell {
+      width: calc(33.33% - 1px);
+      &.cell-feature {
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  // payment plan table component end
+
+  .form-wrap {
+    .label {
+      font-size: 0.875rem;
+      color: $ch-txt-sub;
+      font-weight: 400;
+      margin-bottom: 0.2rem !important;
+    }
+
+    .select {
+      &::after {
+        border-color: $ch-txt-sub !important;
+        top: 44% !important;
+      }
+
+      select {
+        border-radius: 8px !important;
+        background-color: rgba(158, 37, 37, 0.06) !important;
+        border-color: $ch-border !important;
+        font-size: 0.875rem !important;
+        color: $ch-grey !important;
+      }
+    }
+
+    input,
+    textarea,
+    .vue-tel-input {
+      border-radius: 8px !important;
+
+      &:focus-within {
+        // border: 1px solid $primary !important;
+        box-shadow: none !important;
+      }
+    }
+
+    input[type='text'],
+    input[type='name'],
+    input[type='email'],
+    input[type='phone'],
+    input[type='password'],
+    textarea {
+      background: rgba(255, 255, 255, 1) !important;
+      border: 1px solid $ch-border !important;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $ch-pop;
+      padding-left: 20px;
+    }
+
+    input::placeholder {
+      color: $ch-grey;
+    }
+
+    .tr-input {
+      input {
+        border: 1px solid $ch-maroon-invert !important;
+      }
+    }
+
+    .chk-row {
+      margin-bottom: 0;
+
+      .column {
+        padding: 0.6rem;
+      }
+    }
+
+    .chk-bx {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      float: right;
+
+      .label {
+        margin-bottom: 0 !important;
+        margin-right: 8px;
+        color: $primary;
+        font-weight: 600;
+      }
+      .checkbox {
+        margin-right: -10px;
+      }
+
+      .b-checkbox.checkbox input[type='checkbox'] + .check {
+        border: 1px solid $ch-txt-sub;
+        background: transparent;
+        border-radius: 5px;
+      }
+
+      .b-checkbox.checkbox input[type='checkbox']:checked + .check {
+        background: #fa5f6b
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E")
+          no-repeat center center;
+        border-color: transparent;
+      }
+    }
+
+    /* switch normal */
+    .switch-nl {
+      label {
+        color: $ch-light-grey;
+        font-weight: 500;
+        font-size: 14px;
+        &.is-active {
+          color: $ch-txt;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .vue-tel-input {
+      border: 1px solid $ch-border !important;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $ch-pop;
+      min-height: 35px;
+    }
+
+    input:not(.vti__input),
+    .vue-tel-input {
+      &:focus-within {
+        border: 1px solid $ch-border !important;
+      }
+    }
+
+    /*-------------Tooltip Component START-------------------------*/
+
+    .b-tooltip {
+      line-height: 1;
+    }
+    .left-top-tooltip {
+      .tooltip-content {
+        top: -235% !important;
+        right: calc(100% + 5px + -35px) !important;
+        line-height: 1.4;
+        &::before {
+          top: 100% !important;
+          right: auto !important;
+          bottom: auto !important;
+          left: 90% !important;
+          transform: translateX(-50%) !important;
+
+          border-right: 5px solid transparent !important;
+          border-left: 5px solid transparent !important;
+        }
+      }
+    }
+
+    /*-------------Tooltip Component END-------------------------*/
+
+    /*-------------Feature - New Signup START-------------------------*/
+
+    &__signup {
+      .field:not(:last-child) {
+        // margin-bottom: 1.3rem !important;
+      }
+
+      .field {
+        .help {
+          text-align: left;
+        }
+      }
+      .b-tooltip {
+        line-height: 1;
+        .icon i {
+          color: $ch-dark-grey;
+        }
+      }
+
+      .table-plan {
+        .b-tooltip {
+          .icon i {
+            color: $ch-head;
+          }
+        }
+      }
+
+      .left-top-tooltip {
+        .tooltip-content {
+          top: -235% !important;
+          right: calc(100% + 5px + -35px) !important;
+          line-height: 1.4;
+          &::before {
+            top: 100% !important;
+            right: auto !important;
+            bottom: auto !important;
+            left: 90% !important;
+            transform: translateX(-50%) !important;
+            border-top: 5px solid $ch-dark-grey !important;
+            border-right: 5px solid transparent !important;
+            border-left: 5px solid transparent !important;
+          }
+        }
+      }
+
+      .sign-que-wrap {
+        display: grid;
+        place-content: center;
+        min-height: 30vmax;
+        gap: 3em;
+
+        @media #{$break-lph-lgh} {
+          margin-block: 2em;
+        }
+
+        .sign-que-btns {
+          .button {
+            @include touch {
+              padding: .8rem;
+              white-space: normal;
+              height: auto;
+            }
+          }
+        }
+      }
+
+      // stepper
+      .signup-stepper {
+        .step-title {
+          color: $ch-vid;
+          font-size: 1rem !important;
+          font-weight: 700 !important;
+
+          @media #{$break-sm-md} {
+            font-size: 0.8rem !important;
+          }
+        }
+        .steps {
+          margin-bottom: 0em;
+          .step-item {
+            &:not(.is-previous) {
+              opacity: 0.4;
+            }
+
+            .step-link {
+              gap: 0.8rem;
+              z-index: 5;
+              position: relative;
+
+              .step-details {
+                // background-color: transparent !important;
+              }
+            }
+            &.is-active {
+              opacity: 1;
+            }
+
+            .step-marker {
+              background: $white !important;
+              box-shadow: 0px 4px 16px rgba(13, 16, 27, 0.25);
+              border-color: transparent !important;
+              color: $success !important;
+            }
+
+            &:not(:first-child)::before,
+            &:only-child::before {
+              height: 0.1em !important;
+              z-index: 1;
+              opacity: 0.3;
+
+              @include mq(desktop) {
+                left: -42% !important;
+              }
+
+              @include desktop {
+                width: 72% !important;
+              }
+            }
+          }
+          &.mobile-minimalist {
+            .step-items {
+              .step-item {
+                @include mobile {
+                  &::before,
+                  &::after {
+                    display: none !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .step-navigation {
+          text-align: center;
+        }
+      }
+      // slider
+      .sign-que-slider {
+        %round-label {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          padding: 0.9rem;
+          display: grid;
+          place-content: center;
+          color: $ch-vid;
+          font-weight: 600;
+        }
+
+        .b-slider-tick-label {
+          @extend %round-label;
+          top: calc(0.625rem * 0.5 - 50px) !important;
+          background: $ch-dark-high;
+        }
+
+        .b-slider-tick-label {
+          .is-active-num {
+            @extend %round-label;
+            background: $primary;
+          }
+        }
+
+        // .b-slider-track {
+        //   .b-slider-fill + div {
+        //     & > div:not(:first-child) {
+        //       .b-slider-tick-label {
+        //         background: $ch-dark-high;
+        //       }
+        //     }
+        //   }
+        // }
+
+        .b-slider-thumb {
+          background: $primary !important;
+          border-color: $primary !important;
+        }
+      }
+      .sign-que-btns {
+        .button {
+          &.is-select {
+            background-color: $primary;
+            color: $ch-vid !important;
+          }
+        }
+      }
+
+      .sign-process-bx {
+        position: relative;
+      }
+
+      .sign-process {
+        .column:not(:last-child) {
+          .sign-process-bx {
+            @include desktop {
+              &::after {
+                content: '';
+                position: absolute;
+                inset: 50% -20% auto auto;
+                width: 100%;
+                max-width: 5em;
+                height: 2px;
+                background-color: $ch-vid;
+              }
+            }
+          }
+        }
+      }
+
+      // Payment Plan Start
+
+      .signup-pay {
+        .is-shadow {
+          box-shadow: 0px 4px 16px rgba(13, 16, 27, 0.25) !important;
+        }
+
+        &__plan {
+          .num-incremet .icon i {
+            color: $primary !important;
+          }
+
+          .radio-btns {
+            text-align: left;
+            .field:not(:last-child) {
+              margin-bottom: 0.1rem !important;
+            }
+          }
+
+          .sign-add-btn {
+            & > span {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+
+      // Payment Plan and details
+
+      input[type='text'],
+      input[type='name'],
+      input[type='email'],
+      input[type='phone'],
+      input[type='password'],
+      textarea {
+        border-color: $ch-form !important;
+        border-radius: 4px !important;
+        padding-left: 6px;
+        font-weight: 400;
+      }
+
+      .select {
+        select {
+          background-color: transparent !important;
+          border-color: $ch-form !important;
+          border-radius: 4px !important;
+          color: $ch-vid !important;
+        }
+      }
+
+      input::placeholder {
+        color: $ch-dark-medium;
+      }
+
+      .grey-input {
+        input[type='text'],
+        input[type='name'],
+        input[type='email'],
+        input[type='phone'],
+        input[type='password'],
+        textarea {
+          border-color: $ch-dark-medium !important;
+        }
+      }
+
+      .signup-pay {
+        &__details {
+          .label {
+            text-align: left;
+          }
+        }
+      }
+    }
+    /*-------------Feature - New Signup END-------------------------*/
+  }
+
+  // switch start
+  .switch-wrap {
+    .btn {
+      border: 0px solid #1a1a1a;
+      padding: 3px 20px;
+      position: relative;
+      text-align: center;
+      transition: left 600ms ease, color 600ms ease;
+      border-radius: 45px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    input[type='radio'].toggle {
+      display: none;
+      & + label {
+        cursor: pointer;
+        min-width: 60px;
+        &:hover {
+          background: none;
+          color: #1a1a1a;
+        }
+        &:after {
+          content: '';
+          height: 100%;
+          position: absolute;
+          top: 0;
+          transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+          width: auto;
+          z-index: -1;
+        }
+      }
+      &.toggle-left + label {
+        border-right: 0;
+        background: $white;
+        z-index: 10;
+
+        &:after {
+          left: 100%;
+        }
+      }
+
+      &.toggle-left {
+        &:checked + label {
+          background: $primary;
+        }
+      }
+
+      &.toggle-right + label {
+        margin-left: -15px;
+        background: $white;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        z-index: 1;
+        &:after {
+          left: -100%;
+        }
+      }
+
+      &.toggle-right {
+        &:checked + label {
+          background: $primary;
+        }
+      }
+
+      &:checked + label {
+        cursor: default;
+        color: #fff;
+        transition: color 200ms;
+        &:after {
+          left: 0;
+        }
+      }
+    }
+  }
+  // switch end
+
+  // price list start
+
+  .price-list {
+    color: $ch-txt-sub;
+    font-size: 0.875rem;
+    list-style: none;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    li {
+      position: relative;
+    }
+    li:after {
+      @include fa();
+      content: '\f00c';
+      color: $primary;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  // price list end
+
+  // num input start
+  .num-input {
+    .button {
+      background-color: transparent !important;
+      color: $ch-txt !important;
+      font-weight: 600 !important;
+    }
+    input {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      color: $ch-txt !important;
+      font-size: 2rem;
+      box-shadow: none !important;
+      padding: 0 !important;
+      height: auto !important;
+      font-weight: 600 !important;
+    }
+    .b-numberinput.field {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .control {
+      margin-right: 0 !important;
+    }
+
+    .control.is-clearfix {
+      max-width: min-content;
+      min-width: 4em;
+      width: 4em;
+    }
+  }
+  // num input end
+
+  /*----------Cancel Booking Start------------------*/
+
+  .booking {
+    &__left {
+      display: flex;
+      flex-direction: column;
+
+      .booking-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em 3em 2em 3em;
+
+        @media #{$break-ds-lp} {
+          padding: 2em 2em 0 2em;
+        }
+
+        @include touch {
+          padding: 2em 0em 0em 0em;
+
+          &.form-wrap {
+            padding: 0em 0em 0em 0em;
+          }
+        }
+      }
+
+      .btn-sec {
+        .button {
+          min-height: 45px;
+        }
+      }
+    }
+    &__right {
+      .bg-wrap {
+        z-index: 1;
+
+        @include mobile {
+          height: 40em;
+        }
+
+        @include mq(small) {
+          height: 20em;
+        }
+        .bg-img {
+          position: absolute;
+          z-index: -3;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          z-index: -2;
+          // background: linear-gradient(
+          //   0deg,
+          //   rgba(250, 95, 107, 0.8),
+          //   rgba(250, 95, 107, 0.8)
+          // );
+        }
+        .logo {
+          @include mobile {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+
+  /*----------Cancel Booking End------------------*/
+}
