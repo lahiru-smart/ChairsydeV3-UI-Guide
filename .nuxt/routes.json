@@ -1,10 +1,17 @@
 [
   {
-    "name": "fun",
-    "path": "/fun",
-    "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\fun.vue",
-    "chunkName": "pages/fun",
-    "_name": "_44b63a02"
+    "name": "colors",
+    "path": "/colors",
+    "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\colors.vue",
+    "chunkName": "pages/colors",
+    "_name": "_3840c4a0"
+  },
+  {
+    "name": "pages",
+    "path": "/pages",
+    "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\pages.vue",
+    "chunkName": "pages/pages",
+    "_name": "_bf5cbe78"
   },
   {
     "name": "sample",

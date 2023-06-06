@@ -24,30 +24,74 @@
     />
     <b-tooltip
       
-      label='Dashboard'
+      label='Pages'
       position='is-right'
       type='is-dark'
     >
       <b-navbar-item
         class='p-4'
         tag='router-link'
-        to='/landing'
+        to='/pages'
        
       >
         <figure class='image is-24x24'>
-          <img
-            class='inactive-icon'
-            src='@/assets/images/icons/dashboard.svg'
-          />
-          <img
-            class='active-icon'
-            src='@/assets/images/icons/dashboard-active.svg'
-          />
+          <i class="fas fa-pager fa-1x inactive-icon has-text-white"></i>
+          <i class="fas fa-pager fa-1x active-icon has-text-primary"></i>
         </figure>
 
         <label
           class='has-text-white fs-nl has-text-weight-semibold is-hidden-tablet'
-        >Dashboard</label
+        >Pages</label
+        >
+      </b-navbar-item>
+    </b-tooltip>
+
+
+    <b-tooltip
+      
+      label='Colors'
+      position='is-right'
+      type='is-dark'
+    >
+      <b-navbar-item
+        class='p-4'
+        tag='router-link'
+        to='/colors'
+       
+      >
+        <figure class='image is-24x24'>
+          <i class="fas fa-palette fa-1x inactive-icon has-text-white"></i>
+          <i class="fas fa-palette fa-1x active-icon has-text-primary"></i>
+        </figure>
+
+        <label
+          class='has-text-white fs-nl has-text-weight-semibold is-hidden-tablet'
+        >Colors</label
+        >
+      </b-navbar-item>
+    </b-tooltip>
+
+
+    <b-tooltip
+      
+      label='Utilities'
+      position='is-right'
+      type='is-dark'
+    >
+      <b-navbar-item
+        class='p-4'
+        tag='router-link'
+        to='/utilities'
+       
+      >
+        <figure class='image is-24x24'>
+          <i class="fab fa-codepen fa-1x inactive-icon has-text-white"></i>
+          <i class="fab fa-codepen fa-1x active-icon has-text-primary"></i>
+        </figure>
+
+        <label
+          class='has-text-white fs-nl has-text-weight-semibold is-hidden-tablet'
+        >Utilities</label
         >
       </b-navbar-item>
     </b-tooltip>
