@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  generate: {
+    subFolders: false
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Chairsyde",
@@ -92,6 +95,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
+      'bulma',
       '@/assets/scss/main.scss'
     ],
 
