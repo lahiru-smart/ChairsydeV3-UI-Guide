@@ -48,7 +48,6 @@
           </div>
         </div>
 
-
         <div class="column is-2">
           <div
             class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
@@ -175,7 +174,6 @@
           </div>
         </div>
 
-
         <div class="column is-2">
           <div
             class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
@@ -238,8 +236,6 @@
             </div>
           </div>
         </div>
-
-        
       </div>
     </div>
     <div class="uti-box my-4">
@@ -505,14 +501,6 @@
             </div>
           </div>
         </div>
-
-        
-
-
-
-  
-
-        
       </div>
     </div>
     <div class="uti-box my-4">
@@ -778,14 +766,6 @@
             </div>
           </div>
         </div>
-
-        
-
-
-
-  
-
-        
       </div>
     </div>
 
@@ -794,51 +774,169 @@
     <!-- Tags -->
 
     <div class="intro-headings my-3">
-      <h2 class="intro-txt has-text-weight-semibold">Tags</h2>
+      <h2 class="intro-txt has-text-weight-semibold">Font Sizes</h2>
     </div>
 
-    <div class="btn-wrap">
-      <div class="columns is-align-items-center">
+    <div class="uti-box">
+      <h5 class="mb-3">Bulma Responsive Typo Sizes</h5>
+      <div class="columns is-multiline is-desktop">
         <div class="column is-2">
-          <h6>Normal</h6>
-        </div>
-        <div class="column">
-          <b-field>
-            <b-tag class="has-text-weight-semibold" type="is-primary"
-              >Normal</b-tag
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
             >
-          </b-field>
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-1 | .is-size-1-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-1">3rem (48px)</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column">
-          <b-field>
-            <b-input
-              value='<b-field><b-tag class="has-text-weight-semibold" type="is-primary">Normal</b-tag></b-field>'
-            ></b-input>
-          </b-field>
-        </div>
-      </div>
-      <div class="columns is-align-items-center">
         <div class="column is-2">
-          <h6>Rounded</h6>
-        </div>
-        <div class="column">
-          <b-field>
-            <b-tag
-              class="bd-primary has-text-primary is-tag-rounded has-text-weight-semibold"
-              type="is-light"
-              >Rounded tag label</b-tag
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
             >
-          </b-field>
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-2 | .is-size-2-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-2">2.5rem (40px)</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column">
-          <b-field>
-            <b-input
-              value='<b-field><b-tag class="bd-primary has-text-primary is-tag-rounded has-text-weight-semibold" type="is-light">Rounded tag</b-tag></b-field>'
-            ></b-input>
-          </b-field>
+        <div class="column is-2">
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+            >
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-3 | .is-size-3-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-3">2rem (32px)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+            >
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-4 | .is-size-4-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-4">1.5rem (24px)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+            >
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-5 | .is-size-5-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-5">1.25rem (20px)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+            >
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-6 | .is-size-6-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-6">1rem (16px)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div
+            class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+          >
+            <div
+              class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+            >
+              <div
+                class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="has-text-ch-dark-medium">
+                  .is-size-7 | .is-size-7-[res*]
+                </p>
+              </div>
+              <div
+                class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center is-justify-content-center"
+              >
+                <p class="is-size-7">0.75rem (12px)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <hr />
   </div>
 </template>
