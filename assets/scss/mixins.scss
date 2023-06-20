@@ -129,7 +129,7 @@ $windowSizes: (
     max-width: #{$j}px;
   }
 
-  .min-h-#{$j}px {
+  .max-h-#{$j}px {
     min-height: #{$j}px;
   }
 
