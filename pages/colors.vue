@@ -768,7 +768,7 @@
         </div>
         <div class="column">
           <b-button
-            class="bg-trans p-0 h-auto"
+            class="bg-trans has-text-ch-icons p-0 h-auto"
             type="is-ch-txt-sub"
             icon-right="close"
             size="is-medium"
@@ -777,7 +777,7 @@
         <div class="column">
           <b-field>
             <b-input
-              value='<b-button class="bg-trans p-0 h-auto" type="is-ch-txt-sub" icon-right="close" size="is-medium" />'
+              value='<b-button class="bg-trans has-text-ch-icons p-0 h-auto" type="is-ch-txt-sub" icon-right="close" size="is-medium" />'
             ></b-input>
           </b-field>
         </div>
