@@ -2031,6 +2031,587 @@
         </div>
       </div>
     </div>
+
+    <!-- custom -->
+
+
+        <hr />
+
+<div class="intro-headings my-3">
+  <div
+    class="is-flex is-align-items-center is-justify-content-space-between"
+  >
+    <h2 class="intro-txt has-text-weight-semibold">
+      Custom Helpers
+    </h2>
+   
+  </div>
+</div>
+
+<div class="uti-box mt-3">
+  <div class="columns is-multiline is-desktop">
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">.breakout</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">Go fullwidth beyond parent</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-full-height</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">min-height: 100%;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-full-scr</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">min-height: 100vh;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">h-scr</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">height: 100vh;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-fullheight</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">height: 100%;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-auto-height</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">min-height: auto;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">h-auto</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">height: auto;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">h-inherit</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">height: inherit;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">w-max</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">width: max-content;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">w-auto</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">width: auto;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">w-100</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">width: 100%;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-btn-shadow</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">button box shadow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-icon-shadow</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">icon box shadow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-unlink</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">text-decoration: none;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-borderless</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">border: none;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">bg-trans</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">transparent bg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">bg-gradient</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">Chairsyde gradient bg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">ob-cover</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">object-fit: cover;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">ob-contain</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">object-fit: contain;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">ob-center</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">object-position: top center;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">is-tag-rounded</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">border-radius: 100vmax;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">clipped-text-nl</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">Clipped Text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">shadow-active</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">Remove clickable shadow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">btm-box-gradient</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">bottom content reveal shadow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">y-scroll</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">vertical scroll</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">inner-scroll</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">inner y scroll style</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">inner-scroll inner-scroll__primary</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">inner y scroll brand style</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-2">
+      <div
+        class="box has-text-centered p-0 has-background-ch-vid has-text-ch-vid is-clipped h-80px"
+      >
+        <div
+          class="is-flex is-flex-direction-column h-100 has-text-weight-semibold"
+        >
+          <div
+            class="is-flex-grow-1 is-flex is-align-items-center is-justify-content-center"
+          >
+            <p class="has-text-ch-dark-medium">inner-scroll-x</p>
+          </div>
+          <div
+            class="is-flex-grow-1 has-background-ch-dark-medium is-flex is-align-items-center"
+          >
+            <p class="fs-mmd has-text-centered w-100">inner x scroll style</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <hr />
   </div>
 </template>
