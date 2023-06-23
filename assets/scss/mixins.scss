@@ -9,7 +9,7 @@
     border: 1px solid nth($value, 1) !important;
   }
 
-  .is-dashed.bd-#{$prop} {
+  .is-dashed-bd-#{$prop} {
     border: 1px dashed nth($value, 1) !important;
   }
 }

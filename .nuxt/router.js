@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _3840c4a0 = () => interopDefault(import('..\\pages\\colors.vue' /* webpackChunkName: "pages/colors" */))
+const _492a91ee = () => interopDefault(import('..\\pages\\layouts.vue' /* webpackChunkName: "pages/layouts" */))
 const _bf5cbe78 = () => interopDefault(import('..\\pages\\pages.vue' /* webpackChunkName: "pages/pages" */))
 const _1a42604c = () => interopDefault(import('..\\pages\\sample.vue' /* webpackChunkName: "pages/sample" */))
 const _62ce3dec = () => interopDefault(import('..\\pages\\utilities.vue' /* webpackChunkName: "pages/utilities" */))
@@ -25,6 +26,10 @@ export const routerOptions = {
     path: "/colors",
     component: _3840c4a0,
     name: "colors"
+  }, {
+    path: "/layouts",
+    component: _492a91ee,
+    name: "layouts"
   }, {
     path: "/pages",
     component: _bf5cbe78,

@@ -95,6 +95,29 @@
         >
       </b-navbar-item>
     </b-tooltip>
+    <b-tooltip
+      
+      label='Layouts'
+      position='is-right'
+      type='is-dark'
+    >
+      <b-navbar-item
+        class='p-4'
+        tag='router-link'
+        to='/layouts'
+       
+      >
+        <figure class='image is-24x24'>
+          <i class="fas fa-columns fa-1x inactive-icon has-text-white"></i>
+          <i class="fas fa-columns fa-1x active-icon has-text-primary"></i>
+        </figure>
+
+        <label
+          class='has-text-white fs-nl has-text-weight-semibold is-hidden-tablet'
+        >Layouts</label
+        >
+      </b-navbar-item>
+    </b-tooltip>
 
     
     

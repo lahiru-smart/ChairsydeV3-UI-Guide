@@ -3,30 +3,42 @@
     "name": "colors",
     "path": "/colors",
     "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\colors.vue",
-    "chunkName": "pages/colors"
+    "chunkName": "pages/colors",
+    "_name": "_3840c4a0"
+  },
+  {
+    "name": "layouts",
+    "path": "/layouts",
+    "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\layouts.vue",
+    "chunkName": "pages/layouts",
+    "_name": "_492a91ee"
   },
   {
     "name": "pages",
     "path": "/pages",
     "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\pages.vue",
-    "chunkName": "pages/pages"
+    "chunkName": "pages/pages",
+    "_name": "_bf5cbe78"
   },
   {
     "name": "sample",
     "path": "/sample",
     "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\sample.vue",
-    "chunkName": "pages/sample"
+    "chunkName": "pages/sample",
+    "_name": "_1a42604c"
   },
   {
     "name": "utilities",
     "path": "/utilities",
     "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\utilities.vue",
-    "chunkName": "pages/utilities"
+    "chunkName": "pages/utilities",
+    "_name": "_62ce3dec"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\Projects\\\\ChairsydeV3-UI-Guide\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_3a75a2d2"
   }
 ]
